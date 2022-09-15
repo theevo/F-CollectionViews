@@ -13,6 +13,7 @@
 		ACA8903B28D3C9F700548AF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8903928D3C9F700548AF6 /* Main.storyboard */; };
 		ACA8903D28D3C9F800548AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACA8903C28D3C9F800548AF6 /* Assets.xcassets */; };
 		ACA8904028D3C9F800548AF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA8903E28D3C9F800548AF6 /* LaunchScreen.storyboard */; };
+		ACB72BA628D3CFE1002E7095 /* PizzaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB72BA528D3CFE1002E7095 /* PizzaCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ACA8903C28D3C9F800548AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACA8903F28D3C9F800548AF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACA8904128D3C9F800548AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB72BA528D3CFE1002E7095 /* PizzaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				ACA8903328D3C9F700548AF6 /* AppDelegate.swift */,
 				ACA8903528D3C9F700548AF6 /* SceneDelegate.swift */,
 				ACA8903728D3C9F700548AF6 /* ViewController.swift */,
+				ACB72BA528D3CFE1002E7095 /* PizzaCollectionViewCell.swift */,
 				ACA8903928D3C9F700548AF6 /* Main.storyboard */,
 				ACA8903C28D3C9F800548AF6 /* Assets.xcassets */,
 				ACA8903E28D3C9F800548AF6 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACA8903828D3C9F700548AF6 /* ViewController.swift in Sources */,
+				ACB72BA628D3CFE1002E7095 /* PizzaCollectionViewCell.swift in Sources */,
 				ACA8903428D3C9F700548AF6 /* AppDelegate.swift in Sources */,
 				ACA8903628D3C9F700548AF6 /* SceneDelegate.swift in Sources */,
 			);
