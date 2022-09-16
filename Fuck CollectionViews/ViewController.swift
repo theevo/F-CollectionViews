@@ -15,12 +15,15 @@ class ViewController: UIViewController, UICollectionViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         pizzaCollectionView.delegate = self
         pizzaCollectionView.dataSource = self
+        
+        applyColors()
     }
-
-
+    
+    func applyColors() {
+        pizzaCollectionView.border(color: .blue)
+    }
 }
 
 extension ViewController: UICollectionViewDataSource {
