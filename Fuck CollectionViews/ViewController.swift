@@ -10,19 +10,35 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate {
     
     // MARK: - Outlets
+    @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var pizzaCollectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var label: UILabel!
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pizzaCollectionView.delegate = self
         pizzaCollectionView.dataSource = self
         
+        applyConstraints()
         applyColors()
     }
     
+    func applyConstraints() {
+        NSLayoutConstraint.activate([
+            pizzaCollectionView.topAnchor.constraint(equalTo: stackView.topAnchor),
+            pizzaCollectionView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
+            pizzaCollectionView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
+            pizzaCollectionView.heightAnchor.constraint(equalTo: pizzaCollectionView.widthAnchor)
+        ])
+    }
+    
     func applyColors() {
+        stackView.border(color: .systemGray, thickness: 0.4)
         pizzaCollectionView.border(color: .blue)
+        pageControl.border(color: .red)
+        label.border(color: .green)
     }
 }
 
